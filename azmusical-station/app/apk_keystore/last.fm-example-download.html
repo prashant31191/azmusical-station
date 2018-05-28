@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<title>Get the top artists and their playcounts using last.fm API</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+    $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=test&api_key=YOUR_API_KEY&limit=10&format=json&callback=?", function(json) {
+        var html = '';
+        $.each(json.topartists.artist, function(i, item) {
+            html += "<p><a href=" + item.url + " target='_blank'>" + item.name + " - " + "Play count : " +item.playcount + "</a></p>";
+        });
+        $('#result').append(html);
+    });
+});
+</script>
+<div id="result"></div>
+</body>
+</html>

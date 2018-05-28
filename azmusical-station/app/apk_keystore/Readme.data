@@ -1,0 +1,29 @@
+------------------------------------
+https://www.last.fm/api/account/create
+
+Application name	azmusical-station
+API key	e08dde21e4cf38d90ea2b3b11a48283b
+Shared secret	d9b841733bd47ffce9748408e8a4f93f
+Registered to	prashant31191
+
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+=============================
+
+api doc
+
+-http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=test&api_key=4a9f5581a9cdf20a699f540ac52a95c9&limit=10&format=json&callback=?
+
+
+===============================
+
+
